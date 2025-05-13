@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #6a0dad;
+  color: white;
+  text-align: center;
+  padding: 60px 20px 30px;
+}
+
+header h1 {
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subtitulo {
+  font-size: 1.2em;
+  font-weight: normal;
+  margin: 5px 0;
+}
+
+.autor {
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  gap: 40px;
+}
+
+.box {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  width: 300px;
+}
+
+.box h2 {
+  color: #6a0dad;
+  margin-bottom: 10px;
+}
+
+.box p {
+  font-size: 1em;
+  color: #333;
+}
+
+.conexao {
+  background-color: #6a0dad;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 40px;
+}
+
+.conexao h2 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.conexao p {
+  font-size: 1.1em;
+  font-weight: bold;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.agrinho-info {
+  text-align: center;
+  padding: 30px 20px;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  color: #333;
+  font-size: 1.1em;
+}
+
+.agrinho-info .arroba {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #6a0dad;
+}
+
+@media (max-width: 700px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+}
