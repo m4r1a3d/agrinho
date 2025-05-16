@@ -1,45 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Festejando a Conexão Campo-Cidade</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festejando a Conexão Campo-Cidade</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
+        <header class="header">
+            <h1>Festejando a Conexão Campo-Cidade</h1>
+        </header>
 
-  <header>
-    <h1>Festejando a Conexão Campo-Cidade</h1>
-    <p class="subtitulo">Programa Agrinho</p>
-    <p class="autor">Por Maria Eduarda Souza</p>
-  </header>
+        <div class="agrinho-info">
+            <p class="pequeno"><strong>Com o programa Agrinho</strong></p>
+            <p class="pequeno"><strong>Por Maria Eduarda Mendonça de Souza</strong></p>
+        </div>
 
-  <main>
-    <div class="box">
-      <h2>Campo</h2>
-      <p>O campo representa o ambiente rural, onde predominam as atividades agropecuárias, o contato com a natureza e um estilo de vida mais tranquilo e conectado à terra.</p>
+        <section class="conexao-importancia">
+            <h2><strong>A Importância da Conexão</strong></h2>
+            <p><strong>A conexão entre o campo e a cidade é fundamental para o desenvolvimento das regiões rurais e urbanas. A troca de experiências, conhecimentos e recursos fortalece a economia e proporciona mais qualidade de vida para todos. Ao entender as realidades distintas, podemos colaborar na construção de um futuro mais sustentável e próspero.</strong></p>
+        </section>
+
+        <section class="programa-agrinho">
+            <h3><strong>O que é o programa Agrinho?</strong></h3>
+            <p>O programa Agrinho é uma iniciativa que visa promover a educação do campo e a aproximação dos jovens com o universo agrícola e rural. O programa busca fortalecer a conexão entre a cidade e o campo, por meio de ações educativas e culturais, incentivando o desenvolvimento sustentável nas áreas rurais.</p>
+        </section>
+
+        <footer>
+            <p>@agrinho</p>
+        </footer>
+
+        <div class="botao-container">
+            <button class="saiba-mais-btn">Saiba Mais</button>
+            <div class="informacao-adicional" id="informacao-adicional">
+                <p>Para participar, os interessados devem entrar em contato com o sindicato rural local ou com a regional do Sistema FAEP/SENAR-PR. Os alunos podem participar nas seguintes categorias:</p>
+                <ul>
+                    <li>Desenho Apae e Classe Especial (redes pública e particular)</li>
+                    <li>Desenho 1º ano do Ensino Fundamental (rede pública)</li>
+                    <li>Desenho 1º ano do Ensino Fundamental (rede particular)</li>
+                    <li>Redação 2º ao 5º ano do Ensino Fundamental I (rede pública)</li>
+                    <li>Redação 2º ao 9º ano do Ensino Fundamental</li>
+                </ul>
+            </div>
+        </div>
     </div>
 
-    <div class="box">
-      <h2>Cidade</h2>
-      <p>A cidade é o espaço urbano, caracterizado pela concentração de pessoas, serviços, tecnologias e oportunidades, promovendo a diversidade e a inovação.</p>
-    </div>
-  </main>
-
-  <section class="conexao">
-    <h2>A importância da conexão</h2>
-    <p>
-      A conexão entre o campo e a cidade é essencial para garantir o desenvolvimento sustentável e equilibrado da sociedade. O campo fornece alimentos, matérias-primas e recursos naturais, enquanto a cidade contribui com tecnologia, serviços e infraestrutura. Juntas, essas duas realidades se complementam, promovendo trocas culturais, econômicas e sociais que enriquecem a vida de todos.
-    </p>
-  </section>
-
-  <section class="agrinho-info">
-    <p>
-      O Programa Agrinho é uma iniciativa educativa que busca conscientizar crianças e jovens sobre temas como cidadania, meio ambiente, saúde e sustentabilidade, com foco na valorização do campo e suas relações com a cidade. Através de atividades escolares e projetos, o programa incentiva o pensamento crítico e o protagonismo dos estudantes.
-    </p>
-    <p class="arroba">@agrinho</p>
-  </section>
-
+    <script>
+        document.querySelector(".saiba-mais-btn").addEventListener("click", function() {
+            var info = document.getElementById("informacao-adicional");
+            info.style.display = info.style.display === "block" ? "none" : "block";
+        });
+    </script>
 </body>
 </html>
+
+
 

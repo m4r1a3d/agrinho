@@ -1,100 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Cor de fundo do body será clara */
+    color: #333; /* Cor da letra será cinza escuro */
+    line-height: 1.6;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 header {
-  background-color: #6a0dad;
-  color: white;
-  text-align: center;
-  padding: 60px 20px 30px;
+    background-color: #006400; /* Verde escuro */
+    padding: 20px;
+    margin-bottom: 30px;
 }
 
 header h1 {
-  font-size: 3em;
-  font-weight: bold;
-  margin-bottom: 10px;
+    font-size: 3em;
+    font-weight: bold;
+    color: #fff;
 }
 
-.subtitulo {
-  font-size: 1.2em;
-  font-weight: normal;
-  margin: 5px 0;
+.agrinho-info .pequeno {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px 0;
 }
 
-.autor {
-  font-size: 1em;
-  font-weight: normal;
-  margin: 0;
+.conexao-importancia h2,
+.programa-agrinho h3 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 40px;
 }
 
-main {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  padding: 40px 20px;
-  gap: 40px;
+.conexao-importancia p,
+.programa-agrinho p {
+    font-size: 1.2em;
+    margin: 20px 0;
 }
 
-.box {
-  background-color: transparent;
-  border: none;
-  padding: 10px;
-  width: 300px;
+footer p {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 30px;
 }
 
-.box h2 {
-  color: #6a0dad;
-  margin-bottom: 10px;
+.botao-container {
+    margin-top: 40px;
 }
 
-.box p {
-  font-size: 1em;
-  color: #333;
+.saiba-mais-btn {
+    background-color: #006400;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-.conexao {
-  background-color: #6a0dad;
-  color: white;
-  text-align: center;
-  padding: 40px 20px;
-  margin-top: 40px;
+.saiba-mais-btn:hover {
+    background-color: #004d00;
 }
 
-.conexao h2 {
-  font-size: 2em;
-  font-weight: bold;
-  margin-bottom: 20px;
+.informacao-adicional {
+    display: none;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.conexao p {
-  font-size: 1.1em;
-  font-weight: bold;
-  line-height: 1.6;
-  max-width: 800px;
-  margin: 0 auto;
+.informacao-adicional ul {
+    text-align: left;
+    margin-top: 10px;
 }
 
-.agrinho-info {
-  text-align: center;
-  padding: 30px 20px;
-  max-width: 800px;
-  margin: 0 auto 40px;
-  color: #333;
-  font-size: 1.1em;
+.informacao-adicional li {
+    margin-bottom: 10px;
 }
 
-.agrinho-info .arroba {
-  margin-top: 15px;
-  font-weight: bold;
-  color: #6a0dad;
-}
 
-@media (max-width: 700px) {
-  main {
-    flex-direction: column;
-    align-items: center;
-  }
-}
